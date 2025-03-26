@@ -1,0 +1,323 @@
+        /* 
+   Taj & Brothers Enterprises - Projects Page Styles
+   Author: v0
+   Date: 2023
+*/
+        /* ===== PROJECTS HERO SECTION ===== */
+        
+        .projects-hero {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/dzr3drmyk/image/upload/v1742757645/image_m8cqo9.avif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--light-color);
+        }
+        
+        .projects-hero-content {
+            padding: 0 0 50px;
+            text-align: center;
+        }
+        
+        .projects-hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .projects-hero-text h1::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .projects-hero-text p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 30px auto 0;
+        }
+        /* ===== PROJECTS OVERVIEW SECTION ===== */
+        
+        .projects-overview {
+            padding: 100px 0 50px;
+            background-color: var(--white-color);
+        }
+        
+        .overview-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .overview-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        
+        .projects-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .filter-btn {
+            padding: 12px 25px;
+            background-color: var(--light-color);
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--dark-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .filter-btn:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+        
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+        /* ===== PROJECTS TABLE SECTION ===== */
+        
+        .projects-table-section {
+            padding: 50px 0 100px;
+            background-color: var(--white-color);
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            box-shadow: var(--box-shadow);
+            border-radius: 8px;
+        }
+        
+        .projects-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white-color);
+        }
+        
+        .projects-table thead {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+        
+        .projects-table th {
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .projects-table tbody tr {
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+        
+        .projects-table tbody tr:hover {
+            background-color: var(--light-color);
+        }
+        
+        .projects-table td {
+            padding: 15px 20px;
+            font-size: 15px;
+            color: var(--text-color);
+        }
+        
+        .projects-table tbody tr:last-child {
+            border-bottom: none;
+        }
+        
+        .projects-table tbody tr.hidden {
+            display: none;
+        }
+        /* ===== PROJECTS STATS SECTION ===== */
+        
+        .projects-stats-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        
+        .stat-box {
+            background-color: var(--white-color);
+            border-radius: 8px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .stat-box:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow);
+        }
+        
+        .stat-icon {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        
+        .stat-title {
+            font-size: 18px;
+            color: var(--text-color);
+        }
+        /* ===== PROJECT CATEGORIES SECTION ===== */
+        
+        .project-categories-section {
+            padding: 100px 0;
+            background-color: var(--white-color);
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .category-card {
+            background-color: var(--white-color);
+            border-radius: 8px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--card-shadow);
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+        
+        .category-icon {
+            font-size: 40px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        
+        .category-card:hover .category-icon {
+            color: var(--white-color);
+        }
+        
+        .category-card h3 {
+            font-size: 22px;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            transition: var(--transition);
+        }
+        
+        .category-card:hover h3 {
+            color: var(--white-color);
+        }
+        
+        .category-card p {
+            font-size: 15px;
+            color: var(--text-color);
+            line-height: 1.7;
+            transition: var(--transition);
+        }
+        
+        .category-card:hover p {
+            color: var(--white-color);
+        }
+        /* ===== RESPONSIVE STYLES ===== */
+        
+        @media (max-width: 1200px) {
+            .stats-grid,
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .projects-hero-text h1 {
+                font-size: 40px;
+            }
+            .projects-hero-text p {
+                font-size: 18px;
+            }
+            .filter-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .projects-table th,
+            .projects-table td {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .projects-hero-content {
+                padding: 100px 0 70px;
+            }
+            .projects-hero-text h1 {
+                font-size: 32px;
+            }
+            .projects-hero-text p {
+                font-size: 16px;
+            }
+            .stats-grid,
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            .table-responsive {
+                margin: 0 -15px;
+                width: calc(100% + 30px);
+                border-radius: 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .projects-hero-text h1 {
+                font-size: 28px;
+            }
+            .projects-filter {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .filter-btn {
+                width: 100%;
+            }
+            .stat-box {
+                padding: 30px 15px;
+            }
+            .stat-number {
+                font-size: 30px;
+            }
+            .stat-title {
+                font-size: 16px;
+            }
+        }

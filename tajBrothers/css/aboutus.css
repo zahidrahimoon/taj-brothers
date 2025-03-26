@@ -1,0 +1,483 @@
+/* 
+   Taj & Brothers Enterprises - About Page Styles
+*/
+
+
+/* ===== ABOUT HERO SECTION ===== */
+
+.about-hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://res.cloudinary.com/dzr3drmyk/image/upload/v1742757645/image_m8cqo9.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--light-color);
+}
+
+.about-hero-content {
+    padding: 0 0 50px;
+    text-align: center;
+}
+
+.about-hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    display: inline-block;
+}
+
+.about-hero-text h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.about-hero-text p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+.about-breadcrumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+}
+
+.about-breadcrumb ul {
+    display: flex;
+    align-items: center;
+}
+
+.about-breadcrumb ul li {
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.about-breadcrumb ul li a {
+    color: var(--white-color);
+}
+
+.about-breadcrumb ul li a:hover {
+    color: var(--primary-color);
+}
+
+.about-breadcrumb ul li i {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+
+/* ===== ABOUT SECTION ENHANCEMENTS ===== */
+
+.about-section {
+    padding: 100px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.about-content .about-text {
+    flex: 1;
+}
+
+.expertise-list {
+    margin: 15px 0 25px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.expertise-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.expertise-list li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.about-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.about-text h4 {
+    font-size: 20px;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+
+/* ===== TIMELINE SECTION ===== */
+
+.timeline-section {
+    background-color: var(--light-color);
+    padding: 100px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto 0;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 30px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    left: 55%;
+}
+
+.timeline-content h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-size: 18px;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+}
+
+
+/* ===== CEO MESSAGE SECTION ENHANCEMENTS ===== */
+
+.ceo-message-section {
+    padding: 100px 0;
+    background-color: var(--white-color);
+}
+
+.ceo-message-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    padding: 40px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.ceo-image {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.ceo-image .image-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 5px solid var(--primary-color);
+    position: relative;
+}
+
+.ceo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ceo-info h3 {
+    font-size: 24px;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.ceo-info p {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.ceo-text {
+    flex: 1;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 60px;
+    color: var(--primary-color);
+    opacity: 0.2;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.message-body {
+    position: relative;
+    z-index: 1;
+}
+
+.message-body p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.signature {
+    margin-top: 30px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.signature img {
+    max-width: 150px;
+    margin: 10px 0;
+}
+
+.signature h4 {
+    font-size: 20px;
+    color: var(--dark-color);
+    margin: 5px 0;
+}
+
+
+/* ===== TEAM SECTION ===== */
+
+.team-section {
+    background-color: var(--light-color);
+    padding: 100px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team-member {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-shadow);
+}
+
+.member-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-social {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 86, 179, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    transition: var(--transition);
+}
+
+.team-member:hover .member-social {
+    bottom: 0;
+}
+
+.member-social a {
+    color: var(--white-color);
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.member-social a:hover {
+    color: var(--secondary-color);
+}
+
+.member-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.member-info h3 {
+    font-size: 20px;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.member-info p {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* ===== RESPONSIVE STYLES ===== */
+
+@media (max-width: 1200px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .about-hero-text h1 {
+        font-size: 40px;
+    }
+    .about-hero-text p {
+        font-size: 18px;
+    }
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-content .about-text {
+        width: 100%;
+    }
+    .timeline::before {
+        left: 30px;
+    }
+    .timeline-dot {
+        left: 30px;
+    }
+    .timeline-content {
+        width: calc(100% - 80px);
+        left: 80px !important;
+    }
+    .ceo-message-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ceo-image {
+        margin-bottom: 30px;
+    }
+    .quote-icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-content {
+        padding: 100px 0 70px;
+    }
+    .about-hero-text h1 {
+        font-size: 32px;
+    }
+    .about-hero-text p {
+        font-size: 16px;
+    }
+    .timeline-content {
+        padding: 20px;
+    }
+    .timeline-content h3 {
+        font-size: 20px;
+    }
+    .timeline-content h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-hero-text h1 {
+        font-size: 28px;
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    .timeline-content {
+        width: calc(100% - 60px);
+        left: 60px !important;
+    }
+}
